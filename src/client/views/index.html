@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Planner</title>
+</head>
+<body>
+  <!-- start header  -->
+  <header>
+    <div class="container">
+
+      <div class="logo"><span>t</span>ravel <span>p</span>lanner</div>
+
+      <nav>
+        <ul>
+          <li id="add-trip" title="add new trip">+ add trip</li>
+          <li id="print-trip" title="print your trip">print trip</li>
+          <li id="save-trip" title="save trip after form submittion">save trip</li>
+          <li id="remove-trip" title="remove your trip in local Storage">remove trip</li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+  <!-- end header  -->
+
+  <!-- start main part  -->
+  <main>
+    <div class="container">
+
+      <div class="results">
+        <span class="city-contry"></span>
+        <span class="period"></span>
+        <span class="current-wither-temp"></span>
+        <span class="forecast-wither-temp"></span>
+      </div>
+
+      <div id="images">
+        <img src="" id="main-image" alt="place photo">
+        <img src="" id="branch-one-image" alt="place photo">
+        <img src="" id="branch-two-image" alt="place photo">
+      </div>
+      
+      <form id="trip-details" class="not-show">
+        <!-- city name  -->
+        <label for="city">my trip to:</label>
+        <input type="text" id="city" placeholder="enter city name" required>
+        <!-- start date  -->
+        <label for="start-date">start date:</label>
+        <input type="date" id="start-date" placeholder="start date of journy" required title="from today to 15 days">
+        <!-- end date  -->
+        <label for="end-date">end date:</label>
+        <input type="date" id="end-date" placeholder="end date of journy">
+        <!-- submit button  -->
+        <input type="submit" value="Trip Information">
+      </form>
+
+    </div>
+  </main>
+  <!-- end main part -->
+  
+
+  <!-- please remove next comment to operate Service Worker -->
+  
+  <!-- <script>
+      // Check that service workers are supported
+      if ('serviceWorker' in navigator) {
+          // Use the window load event to keep the page load performant
+          window.addEventListener('load', () => {
+              navigator.serviceWorker.register('/service-worker.js');
+          });
+      }
+  </script> -->
+
+</body>
+</html>

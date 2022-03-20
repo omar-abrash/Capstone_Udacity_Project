@@ -1,0 +1,55 @@
+
+$main-color:rgba(0, 119, 255, 0.7);
+
+.logo {
+    padding: 0 0 20px 85px;
+    text-shadow: 3px 3px 5px $main-color;
+    font: {
+        size: 2.5rem;
+        weight:600;
+    }
+    span {
+        text-transform: uppercase;
+        font-size: 4rem;
+    }
+}
+
+header {
+    ul {
+        margin: 0 0 20px 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1.5rem;
+        font-weight: bold;
+        li {
+            color: $main-color;
+            text-transform: capitalize;
+            background-color: aquamarine;
+            padding: 20px;
+            border-radius: 15px;
+            border: 2px solid black;
+            transition: 0.3s;
+            &:hover{
+                cursor: pointer;
+                color: white;
+                background-color: $main-color;
+            }
+            &#add-trip{
+                animation-name: color-change;
+                animation-iteration-count: infinite;
+                animation-duration: 0.5s;
+            }
+        }
+    }
+}
+ // animation 
+@keyframes color-change {
+    from {
+        color: black;
+    }
+    to {
+        color: red;
+    }
+}

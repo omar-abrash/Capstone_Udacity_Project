@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sansita Swashed', cursive;
+    margin: 0;
+    padding: 0;
+    background-color:rgba(14, 228, 236, 0.2);
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+// form part classes 
+.not-show {
+    display: none;
+}
+.show {
+    display: flex;
+}
